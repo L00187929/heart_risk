@@ -1,6 +1,11 @@
 version: '3.8'
+
 services:
   web:
-    build: .
+    image: heartapp:1.0
     ports:
       - "5000:5000"
+    deploy:
+      replicas: 1
+      restart_policy:
+        condition: on-failure
