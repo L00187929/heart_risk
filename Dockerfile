@@ -7,4 +7,4 @@ RUN pip install -r requirements.txt
 
 COPY . .
 
-CMD ["gunicorn", "--bind", "0.0.0.0:5000", "app.flaskapp:app"]
+CMD ["gunicorn", "--bind", "0.0.0.0:5000", "flaskapp.app:app"]
