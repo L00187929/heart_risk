@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   web:
-    image: sha256:1d7d45656a9d
+    image: heartapp:1.0
     ports:
       - "5000:5000"
     deploy:
