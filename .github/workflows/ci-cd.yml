@@ -21,7 +21,7 @@ jobs:
       run: |
         pip install -r requirements.txt
 
-    - name: Run unit tests
+    - name: Run Tests
       run: |
-        pytest tests/
+        pytest test_model.py
 
