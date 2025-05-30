@@ -1,7 +1,7 @@
 version: '3'
 services:
   web:
-    image: l00187929/heart_risk:1.0  # ✅ Use the exact tag you pushed
+    image: l00187929/heart_risk:1.0  
     ports:
       - "5000:5000"
     deploy:
