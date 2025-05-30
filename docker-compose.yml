@@ -1,12 +1,12 @@
-version: '3.8'
-
+version: '3'
 services:
   web:
-    image: heartapp:1.0
+    image: l00187929/heart_risk:1.0  # ✅ Use the exact tag you pushed
     ports:
       - "5000:5000"
     deploy:
-      replicas: 1
+      replicas: 2
       restart_policy:
         condition: on-failure
+
 
