@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: heart-risk
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: heart-app
+  template:
+    metadata:
+      labels:
+        app: heart-app
+    spec:
+      containers:
+      - name: heart-app
+        image: heart-app:latest
+        imagePullPolicy: Never   # Use local Docker image
+        ports:
+        - containerPort: 5000

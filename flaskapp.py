@@ -19,15 +19,13 @@ def predict():
         return jsonify({'prediction': int(prediction)})
     except Exception as e:
         return jsonify({'error': str(e)}), 400
+
 @app.route('/status', methods=['GET'])
 def status():
     return jsonify({'status': 'OK'}), 200
 
-@app.route('/status', methods=['GET'])
-def status():
-    return jsonify({"status": "OK"}), 200
-
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
+
 
 
